@@ -5,6 +5,7 @@
   <title>Birdie Girl Ceramics Order Form</title>
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -28,14 +29,19 @@
     <select name="orderType" id="orderType" required>
       <option value="">-- Select an option --</option>
       <option value="existing">Existing Piece</option>
-      <option value="custom">Custom Request</option>
+      <option value="commission">Commission</option>
     </select>
 
     <!-- Details for Custom Requests -->
     <div id="customDetailsContainer" style="display: none;">
-      <label for="customDetails">Describe Your Custom Request:</label>
+      <label for="customDetails">Describe Your Commission:</label>
       <textarea name="customDetails" id="customDetails" rows="4"></textarea>
     </div>
+
+    <!-- Details for existing order -->
+    <div id="customDetailsContainer" style="display: none;">
+        
+     </div>
 
     <!-- Additional Comments -->
     <label for="comments">Any Additional Comments:</label>
