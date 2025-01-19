@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birdie Girl Ceramics Order Form</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Birdie Girl Ceramics</h1>
+  
+  <form action="process.php" method="POST" id="orderForm">
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <!-- Shipping Address -->
+    <label for="address">Shipping Address:</label>
+    <textarea name="address" id="address" rows="3" required></textarea>
+
+    <!-- Type of Piece -->
+    <label for="orderType">Order Type:</label>
+    <select name="orderType" id="orderType" required>
+      <option value="">-- Select an option --</option>
+      <option value="existing">Existing Piece</option>
+      <option value="custom">Custom Request</option>
+    </select>
+
+    <!-- Details for Custom Requests -->
+    <div id="customDetailsContainer" style="display: none;">
+      <label for="customDetails">Describe Your Custom Request:</label>
+      <textarea name="customDetails" id="customDetails" rows="4"></textarea>
+    </div>
+
+    <!-- Additional Comments -->
+    <label for="comments">Any Additional Comments:</label>
+    <textarea name="comments" id="comments" rows="3"></textarea>
+
+    <button type="submit">Place Order</button>
+  </form>
+
+  <!-- Optionally link to JavaScript for form handling -->
+  <script src="script.js"></script>
+</body>
+</html>
